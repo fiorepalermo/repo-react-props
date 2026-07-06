@@ -4,11 +4,11 @@ export default function Esercizio10() {
   const [todos, setTodos] = useState([
     { id: 1, text: 'Fare la spesa', completed: false },
     { id: 2, text: 'Studiare React', completed: false },
-    { id: 3, text: 'Chiamare mamme', completed: false },
+    { id: 3, text: 'Lezione con Loris', completed: false },
   ]);
 
   const toggleComplete = (id) => {
-    setTodos(todos.map(todo => 
+    setTodos(todos.map(todo =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     ));
   };
