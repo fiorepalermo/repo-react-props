@@ -5,17 +5,19 @@ export default function Esercizio02() {
 
   return (
     <div>
-      <h2>Toggle classe CSS</h2>
+      <h2>Toggle Classe</h2>
       <button
-        className={isPrimary ? 'primary' : 'success'}
+        style={{
+          background: isPrimary ? 'blue' : 'green',
+          color: 'white',
+          padding: '10px 20px',
+          border: 'none',
+          cursor: 'pointer'
+        }}
         onClick={() => setIsPrimary(!isPrimary)}
       >
-        Toggle Classe
+        Premi!! Cambia Colore
       </button>
-      <style jsx>{`
-        .primary { background: blue; color: white; }
-        .success { background: green; color: white; }
-      `}</style>
     </div>
   );
 }
