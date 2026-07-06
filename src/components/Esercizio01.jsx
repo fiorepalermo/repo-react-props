@@ -7,7 +7,7 @@ export default function Esercizio01() {
     <div>
       <h2>Contatore con reset</h2>
       <p>Contatore: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Incrementa</button>
+      <button onClick={() => setCount(count + 1)}>+1</button>
       <button onClick={() => setCount(0)}>Reset</button>
     </div>
   );
